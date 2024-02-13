@@ -1,4 +1,5 @@
 export default {
   home: 'ホーム',
-  test: 'テスト'
+  test: 'テスト',
+  about: "このサイトについて",
 }

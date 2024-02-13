@@ -1,23 +1,17 @@
 <script setup lang="ts">
-const localePath = useLocalePath();
 const { locale } = useI18n();
 const slug = useRoute().params.slug;
 const path = `${locale.value}/${slug}`;
+
+// This will be reactive when you change title/description above
+useHead({
+  htmlAttrs: {
+    lang: locale,
+  },
+});
 </script>
 <template>
   <ContentDoc :path="path" />
 
-  <ul>
-    <li>
-      <nuxt-link
-        :to="
-          localePath({
-            name: 'index',
-          })
-        "
-      >
-        {{ $t("home") }}
-      </nuxt-link>
-    </li>
-  </ul>
+  <BackToTop />
 </template>

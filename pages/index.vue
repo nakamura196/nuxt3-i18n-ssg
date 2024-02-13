@@ -21,5 +21,16 @@ const localePath = useLocalePath();
         {{ $t("test") }}
       </nuxt-link>
     </li>
+    <li>
+      <nuxt-link
+        :to="
+          localePath({
+            name: 'about',
+          })
+        "
+      >
+        {{ $t("about") }}
+      </nuxt-link>
+    </li>
   </ul>
 </template>
