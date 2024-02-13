@@ -1,4 +1,6 @@
-# Nuxt 3 & nuxt/i18n & nuxt/content Example
+# Nuxt 3 & i18n & content Example
+
+![](https://github.com/nakamura196/nuxt3-i18n-ssg/actions/workflows/deploy.yml/badge.svg)
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
