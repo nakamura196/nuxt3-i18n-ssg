@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const defaultLang = "ja";
+const defaultLocale = "ja";
 const baseURL = "/nuxt3-i18n-ssg";
 
 export default defineNuxtConfig({
@@ -8,7 +8,7 @@ export default defineNuxtConfig({
     baseURL,
     head: {
       htmlAttrs: {
-        lang: defaultLang,
+        lang: defaultLocale,
       },
       title: "Nuxt3 i18n SSG",
       meta: [
@@ -32,7 +32,7 @@ export default defineNuxtConfig({
       { code: "en", iso: "en-US", file: "en.js" },
     ],
     langDir: "locales/",
-    defaultLocale: "ja", // default locale of your project for Nuxt pages and routings
+    defaultLocale, // default locale of your project for Nuxt pages and routings
   },
   experimental: {
     defaults: {
