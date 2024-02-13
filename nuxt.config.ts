@@ -1,29 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  srcDir: 'src/',
   app: {
-    baseURL: '/nuxt3-i18n-ssg'
+    baseURL: "/nuxt3-i18n-ssg",
   },
-  modules: ['@nuxtjs/i18n', '@nuxt/content'],
+  modules: ["@nuxtjs/i18n", "@nuxt/content"],
   i18n: {
     locales: [
-      { code: 'ja', iso: 'ja_JP', file: 'ja.js' },
-      { code: 'en', iso: 'en-US', file: 'en.js' }
+      { code: "ja", iso: "ja_JP", file: "ja.js" },
+      { code: "en", iso: "en-US", file: "en.js" },
     ],
-    langDir: 'locales/',
-    defaultLocale: 'ja' // default locale of your project for Nuxt pages and routings
+    langDir: "locales/",
+    defaultLocale: "ja", // default locale of your project for Nuxt pages and routings
   },
   experimental: {
     defaults: {
       nuxtLink: {
-        activeClass: 'nuxt-link-active',
-        trailingSlash: 'append'
-      }
-    }
+        activeClass: "nuxt-link-active",
+        trailingSlash: "append",
+      },
+    },
   },
   typescript: {
     shim: false, // shimsファイル生成の無効化（VSCodeでVolarを使う場合はfalseにする）
     strict: true, // 型チェックを厳格化
-    typeCheck: false // nuxt devまたはnuxt build時に型チェックを実行
-  }
-})
+    typeCheck: false, // nuxt devまたはnuxt build時に型チェックを実行
+  },
+});
