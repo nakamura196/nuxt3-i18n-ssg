@@ -4,7 +4,9 @@ const localePath = useLocalePath();
 <template>
   {{ $t("home") }}
 
-  <img src="/img/nuxt.png" alt="Discover Nuxt 3" />
+  <img src="~/assets/img/nuxt_a.png" alt="assets" />
+
+  <img src="/img/nuxt.png" alt="public" />
 
   <ul>
     <li>
