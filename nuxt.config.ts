@@ -1,7 +1,29 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+const defaultLang = "ja";
+const baseURL = "/nuxt3-i18n-ssg";
+
 export default defineNuxtConfig({
   app: {
-    baseURL: "/nuxt3-i18n-ssg",
+    baseURL,
+    head: {
+      htmlAttrs: {
+        lang: defaultLang,
+      },
+      title: "Nuxt3 i18n SSG",
+      meta: [
+        { charset: "utf-8" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
+        {
+          hid: "description",
+          name: "description",
+          content: "Nuxt 3 & i18n & content Example",
+        },
+      ],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: `${baseURL}/favicon.ico` },
+      ],
+    },
   },
   modules: ["@nuxtjs/i18n", "@nuxt/content"],
   i18n: {
