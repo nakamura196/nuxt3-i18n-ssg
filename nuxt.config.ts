@@ -12,4 +12,12 @@ export default defineNuxtConfig({
     langDir: "locales/",
     defaultLocale: "ja", // default locale of your project for Nuxt pages and routings
   },
+  experimental: {
+    defaults: {
+      nuxtLink: {
+        activeClass: "nuxt-link-active",
+        trailingSlash: "append",
+      },
+    },
+  },
 });
