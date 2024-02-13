@@ -1,10 +1,14 @@
-# Nuxt 3 & nuxt/i18n Minimal Starter
+# Nuxt 3 & nuxt/i18n & nuxt/content Example
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 nuxt/i18n
 
 https://i18n.nuxtjs.org/
+
+nuxt/content
+
+https://content.nuxtjs.org/
 
 ## Setup
 

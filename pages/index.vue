@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const switchLocalePath = useSwitchLocalePath();
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -11,5 +12,15 @@ const switchLocalePath = useSwitchLocalePath();
     <li>
       <NuxtLink :to="switchLocalePath('ja')">日本語</NuxtLink>
     </li>
+
+    <nuxt-link
+      :to="
+        localePath({
+          name: 'slug',
+          params: { slug: 'test' },
+        })
+      "
+      >About</nuxt-link
+    >
   </ul>
 </template>
