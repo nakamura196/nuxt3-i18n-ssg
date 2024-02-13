@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    baseURL: "/nuxt3-i18n-ssg",
+  },
   modules: ["@nuxtjs/i18n", "@nuxt/content"],
   i18n: {
     locales: [
