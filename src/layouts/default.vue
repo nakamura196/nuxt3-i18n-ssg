@@ -1,13 +1,14 @@
 <script setup lang="ts">
+// @ts-ignore
 const switchLocalePath = useSwitchLocalePath();
 </script>
 <template>
   <ul style="background-color: lightcyan">
     <li>
-      <NuxtLink :to="switchLocalePath('en')">English</NuxtLink>
+      <NuxtLink :to="switchLocalePath('en')"> English </NuxtLink>
     </li>
     <li>
-      <NuxtLink :to="switchLocalePath('ja')">日本語</NuxtLink>
+      <NuxtLink :to="switchLocalePath('ja')"> 日本語 </NuxtLink>
     </li>
   </ul>
   <slot />

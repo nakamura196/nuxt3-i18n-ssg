@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const localePath = useLocalePath();
 </script>
-
 <template>
   {{ $t("home") }}
 
@@ -14,8 +13,9 @@ const localePath = useLocalePath();
             params: { slug: 'test' },
           })
         "
-        >{{ $t("test") }}</nuxt-link
       >
+        {{ $t("test") }}
+      </nuxt-link>
     </li>
   </ul>
 </template>

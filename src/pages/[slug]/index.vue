@@ -1,4 +1,5 @@
-<script setup>
+<script setup lang="ts">
+const localePath = useLocalePath();
 const { locale } = useI18n();
 const slug = useRoute().params.slug;
 const path = `${locale.value}/${slug}`;
@@ -17,8 +18,9 @@ const { data } = await useAsyncData(path, () =>
             name: 'index',
           })
         "
-        >{{ $t("home") }}</nuxt-link
       >
+        {{ $t("home") }}
+      </nuxt-link>
     </li>
   </ul>
 </template>
