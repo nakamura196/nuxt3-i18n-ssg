@@ -9,4 +9,17 @@ const { data } = await useAsyncData(path, () =>
 </script>
 <template>
   <ContentRenderer :value="data" />
+
+  <ul>
+    <li>
+      <nuxt-link
+        :to="
+          localePath({
+            name: 'index',
+          })
+        "
+        >{{ $t("home") }}</nuxt-link
+      >
+    </li>
+  </ul>
 </template>
